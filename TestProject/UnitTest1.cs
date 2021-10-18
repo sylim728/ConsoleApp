@@ -14,7 +14,7 @@ namespace TestProject
             using (var sw = new StringWriter())
             {
                 Console.SetOut(sw);
-                HelloWorldCore.Program.Main();
+                ConsoleApp.Program.Main();
 
                 var result = sw.ToString().Trim();
                 Assert.AreEqual(Expected, result);
